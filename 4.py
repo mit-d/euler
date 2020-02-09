@@ -12,3 +12,20 @@ def is_palindrome(n):
         return True
     return False
 
+if __name__ == '__main__':
+    digit_nums = range(1000)[::-1]
+
+x = 999
+ans=0
+while(x>0):
+    y = 999
+    # if our answer is larger than x**2, return
+    if((ans) > (x*999)):
+        print(ans)
+        exit()
+    while(y>x):
+        if is_palindrome(x*y) and (x*y) > ans:
+            ans = x*y
+        y -= 1
+    x -= 1
+
