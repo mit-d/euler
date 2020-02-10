@@ -9,11 +9,11 @@ def IsPrime(number):
     return True
 
 def NthPrime(number):
-    n = 1
+    n = 0
     while number >= 0:
+        n += 1
         if(IsPrime(n)):
             number -= 1
-        n += 1
     return n
 
 if __name__ == '__main__':
