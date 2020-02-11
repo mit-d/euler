@@ -1,5 +1,6 @@
 from math import floor, sqrt
 
+
 def IsPrime(number):
     biggest = floor(sqrt(number)) + 1
     primap = {}
@@ -8,14 +9,15 @@ def IsPrime(number):
             return False
     return True
 
+
 def NthPrime(number):
     n = 0
     while number >= 0:
         n += 1
-        if(IsPrime(n)):
+        if IsPrime(n):
             number -= 1
     return n
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     print(NthPrime(10001))
-    

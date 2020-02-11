@@ -7,8 +7,8 @@ best = ""
 max = 0
 best = 0
 
-for i in range(0,len(str(number-window_size))):
-    digits = str(number)[i:i+window_size]
+for i in range(0, len(str(number - window_size))):
+    digits = str(number)[i : i + window_size]
     mul = 1
 
     for j in digits:
@@ -20,6 +20,3 @@ for i in range(0,len(str(number-window_size))):
 
 # print(best)
 print(max)
-
-
-    

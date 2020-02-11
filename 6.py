@@ -5,12 +5,15 @@
 
 # we want (sum of sq - sq of sum)
 
+
 def SumOfSquares(number):
     ans = 0
     while number > 0:
         ans += number ** 2
         number -= 1
     return ans
+
+
 def SquareOfSums(number):
     ans = 0
     while number > 0:
@@ -18,6 +21,7 @@ def SquareOfSums(number):
         number -= 1
     return ans ** 2
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = 100
     print(SquareOfSums(n) - SumOfSquares(n))
